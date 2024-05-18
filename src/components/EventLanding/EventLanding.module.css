@@ -1,0 +1,9 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #15181b;
+  color: white;
+  display: flex;
+}
+
+

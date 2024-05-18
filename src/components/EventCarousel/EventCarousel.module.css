@@ -1,0 +1,33 @@
+.carousel_container {
+  flex: 2;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.header img {
+  height: 70px;
+  width: 70px;
+}
+.header h1 {
+  color: #ffca5f;
+  margin: 0 10px;
+}
+.carousel_section {
+  position: relative;
+}
+.carousel_section_bg {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+  left: 20px;
+  top: 30px;
+}
+.carousel_section_bg h1{
+    opacity: 20%;
+    font-size: 5rem;
+}
+@media (max-width: 1024px) {
+}

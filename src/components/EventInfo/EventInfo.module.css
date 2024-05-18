@@ -1,0 +1,68 @@
+.info_container {
+    width: 500px;
+}
+.info_inner_container {
+  padding: 40px 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.info_heading {
+  font-weight: bold;
+}
+.info {
+  margin: 30px 0;
+}
+.info h1{
+    font-size: 2.7rem;
+}
+.eventTimeVenue {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+.eventTimeVenue img {
+  height: 20px;
+  margin-right: 10px;
+}
+.eventTimeVenue h4 {
+  margin-right: 20px;
+}
+.artistLineup{
+    margin: 20px 0;
+}
+.artistLineup .artistLineupImgs{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.artistLineup .artistLineupImgs img{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.artistLineup .artistLineupImgs img:nth-child(2){
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+.qrContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+.qrContainer img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    align-self: baseline;
+}
+
+@media (max-width: 1024px) {
+}

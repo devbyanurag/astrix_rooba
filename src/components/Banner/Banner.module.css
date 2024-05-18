@@ -1,0 +1,38 @@
+
+.banner_container {
+    
+    overflow: hidden;
+    width: 70px;
+    background-color: #b9a0ff;
+    color: #000;
+    height: auto;
+  }
+  
+  .banner_container span {
+    writing-mode: vertical-lr;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    height: 100vh;
+  }
+  
+  
+  @keyframes marquee {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  
+  }
+
+  @media (max-width: 1024px) {
+    
+  }
