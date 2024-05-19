@@ -3,6 +3,7 @@ import styles from './MainContainer.module.css'
 import headerLogoImg from '../../assets/images/logo/Astrix Branding.png'
 import ToggleSwitch from '../ToggleSwitch/ToggleSwitch'
 import ImageSliderEvent from '../ImageSliderEvent/ImageSliderEvent'
+import ImageSliderCollection from '../ImageSliderCollection/ImageSliderCollection'
 
 interface MainContainerProps {
     isCheckedCollection: boolean
@@ -22,13 +23,15 @@ const MainContainer = ({ isCheckedCollection, setIsCheckedCollection }: MainCont
                     <div>
                         <h1>ASTR<br />IX</h1>
                     </div>
+                    <br />
+                    <br />
                     <div>
-                        <h1>EVE<br />NTS</h1>
+                        {!isCheckedCollection?<h1>EVE<br />NTS</h1>:<h1>COLL<br />ECTI <br /> BLE</h1>}
                     </div>
                 </div>
             </div>
             <div className={styles.main_carousel_container}>
-                <ImageSliderEvent />
+                {isCheckedCollection?<ImageSliderCollection/>:<ImageSliderEvent />}
 
             </div>
 

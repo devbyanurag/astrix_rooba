@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './SplashScreen.module.css'
 import logoImg from '../../assets/images/logo/Emlblem.png'
 import frame1Img from '../../assets/images/splashScreen/frame1.png'
@@ -22,23 +21,23 @@ const SplashScreen = () => {
             <section className={styles.centered_section}>
             <div className={styles.centered_content}>
                 <div className={styles.centered_row}>
-                    <p className={styles.content}>WE&nbsp;
+                    <span className={styles.content}>WE&nbsp;
                         <div className={styles.frameImg1}>
                             <img src={frame1Img} alt="frame1" />
                         </div>
                         &nbsp;ORGANISE THE
-                    </p>
+                    </span>
                 </div>
 
                 <div className={styles.centered_row}>
-                    <p className={styles.content}>CONNECTION&nbsp;
+                    <span className={styles.content}>CONNECTION&nbsp;
                         <div className={styles.frameImg2}>
                             <img src={frame2Img} alt="frame1" />
                         </div>
-                    </p>
+                    </span>
                 </div>
                 <div className={styles.centered_row}>
-                    <p className={styles.content}>
+                    <span className={styles.content}>
                         <div className={styles.frameImg3}>
                             <img src={frame3Img} alt="frame1" />
                         </div>
@@ -47,10 +46,10 @@ const SplashScreen = () => {
                             <img src={frame4Img} alt="frame1" />
                         </div>
                         &nbsp;MUSIC
-                    </p>
+                    </span>
                 </div>
                 <div className={styles.centered_row}>
-                    <p className={styles.content}>
+                    <span className={styles.content}>
                         ARTIST&nbsp;
                         <div className={styles.frameImg5}>
                             <img src={frame5Img} alt="frame1" />
@@ -59,10 +58,10 @@ const SplashScreen = () => {
                         <div className={styles.frameImg6}>
                             <img src={frame6Img} alt="frame1" />
                         </div>
-                    </p>
+                    </span>
                 </div>
                 <div className={styles.centered_row}>
-                    <p className={styles.content}>
+                    <span className={styles.content}>
                         <div className={styles.frameImg7}>
                             <img src={frame7Img} alt="frame1" />
                         </div>
@@ -71,7 +70,7 @@ const SplashScreen = () => {
                             <img src={frame8Img} alt="frame1" />
                         </div>
                         &nbsp;& COLLECTIONS
-                    </p>
+                    </span>
                 </div>
             </div>
             </section>

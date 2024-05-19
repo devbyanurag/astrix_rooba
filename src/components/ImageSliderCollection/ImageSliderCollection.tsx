@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from './ImageSliderEvent.module.css';
+import styles from './ImageSliderCollection.module.css';
 import image1 from '../../assets/images/event/event-carousel-1.png';
 import image2 from '../../assets/images/event/event-carousel-2.png';
 import image3 from '../../assets/images/event/event-carousel-3.png';
@@ -7,19 +7,28 @@ import image4 from '../../assets/images/event/event-carousel-4.png';
 
 const images = [image1, image2, image3, image4];
 
-const ImageSliderEvent = () => {
+const ImageSliderCollection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [animationStarted, setAnimationStarted] = useState(false);
   
 
-
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+    const timeout = setTimeout(() => {
+      setAnimationStarted(true);
     }, 2000);
 
-    return () => clearInterval(interval);
+    return () => clearTimeout(timeout);
   }, []);
+
+  useEffect(() => {
+    if (animationStarted) {
+      const interval = setInterval(() => {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 2000);
+
+      return () => clearInterval(interval);
+    }
+  }, [ animationStarted]);
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -58,11 +67,13 @@ const ImageSliderEvent = () => {
               transform: `translateX(${translateSize.initial - translateSize.reduceto * activeIndex}px)`,
             }}
           >
-            <img src={image} alt={`img${index + 1}`} />
             <div className={`${index === activeIndex ? styles.cardInfoContainerActive : styles.cardInfoContainerInactive}`}>
-              <h1>Event Name</h1>
-              <p>Location</p>
+              <h1>Lunar Palace: </h1>
+              <p>(ft. Kanye west)</p>
             </div>
+            <img src={image} alt={`img${index + 1}`} />
+
+           
           </div>
         ))}
       </div>
@@ -70,4 +81,4 @@ const ImageSliderEvent = () => {
   );
 };
 
-export default ImageSliderEvent;
+export default ImageSliderCollection;

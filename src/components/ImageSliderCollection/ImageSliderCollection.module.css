@@ -2,7 +2,6 @@
   padding: 30px 0;
   height: 700px;
   width: 100%;
-  position: relative;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -17,10 +16,12 @@
 }
 
 .card_container {
-  position: relative;
   width: 350px;
   margin-right: 20px;
   transition: transform 0.8s cubic-bezier(0.175, 1, 0.32, 1.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .card_container:hover {
@@ -34,34 +35,33 @@
   object-position: top;
 }
 
-.cardInfoContainerInactive {
-  position: absolute;
+.cardInfoContainerActive {
   bottom: 0%;
-  padding: 20px;
+  padding: 0 0 10px 0;
   animation: textVisi 0.5s forwards;
 
 }
 @keyframes textVisi {
   0% {
     bottom: -10px;
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     bottom: 0px;
     opacity: 1;
   }
 }
-.cardInfoContainerActive {
-  position: absolute;
+.cardInfoContainerInactive {
   bottom: 0%;
-  padding: 20px;
+  padding: 0 0 10px 0;
   display: none;
 }
 
-@media (max-width: 1024px) {
+
+/* @media (max-width: 1024px) {
   .container {
     height: 80vh;
   }
-}
+} */
 
 

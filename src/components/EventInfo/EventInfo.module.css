@@ -68,6 +68,7 @@
     width: 70px;
     object-fit: cover;
     align-self: baseline;
+    border-radius: 5px;
 }
 
 @media (max-width: 1024px) {

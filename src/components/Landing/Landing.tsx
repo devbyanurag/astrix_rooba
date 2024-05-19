@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styles from './Landing.module.css'
 import MainContainer from '../MainContainer/MainContainer'
 import Banner from '../Banner/Banner'

@@ -1,4 +1,3 @@
-import React from 'react'
 
 import inPeo_1 from '../../assets/images/collections/interseted-people-1.jpg'
 import inPeo_2 from '../../assets/images/collections/interseted-people-2.jpg'

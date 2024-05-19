@@ -1,5 +1,3 @@
-import React from 'react'
-import collectionCarouselImg from '../../assets/images/collections/collection-carousel-1.png'
 import styles from './Button.module.css'
 const Button = () => {
   return (

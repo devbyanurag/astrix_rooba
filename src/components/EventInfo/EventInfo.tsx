@@ -1,10 +1,9 @@
-import React from 'react'
 import locdarkImg from '../../assets/images/utils/loc-dark.png'
 import alarmdarkImg from '../../assets/images/utils/alarm-dark.png'
 import artistlineup1Img from '../../assets/images/event/event-artistLineup-1.png'
 import artistlineup2Img from '../../assets/images/event/event-artistLineup-2.png'
 import artistlineup3Img from '../../assets/images/event/event-artistLineup-3.png'
-import qrImg from '../../assets/images/event/event-qr-1.png'
+import qrImg from '../../assets/images/event/event-qr-2.png'
 
 
 

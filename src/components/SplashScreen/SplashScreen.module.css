@@ -7,7 +7,7 @@
   left: 0;
   z-index: 2;
   animation: slideUp 1s forwards;
-  animation-delay: 5s; 
+  animation-delay: 8s; 
 }
 
 @keyframes slideUp {
