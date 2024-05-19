@@ -2,6 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
+:root{
+  --body_background: #15181b;
+  --body_color: white;
+  --background_secondary: #282b30;
+  --background_tertiory: #484e56;
+
+ 
+}
+
+[data-theme='light']{
+  --body_background: rgb(255, 255, 255);
+  --body_color: #15181b;
+  --background_secondary: #e4e4e4;
+  --background_tertiory: #cdcdcd;
+
+
+ 
+}
+
 *{
   margin: 0%;
   padding: 0%;

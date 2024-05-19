@@ -3,9 +3,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: fit-content;
-  border: 3px solid #282b30;
+  border: 3px solid var(--background_secondary);
   border-radius: 20px;
-  background: #282b30;
+  background: var(--background_secondary);
   font-weight: bold;
   color: white;
   cursor: pointer;
@@ -19,7 +19,7 @@
   height: 100%;
   left: 0;
   border-radius: 20px;
-  background: #484e56;
+  background: var(--background_tertiory);
   transition: all 0.3s;
 }
 
@@ -31,14 +31,14 @@
   padding: 10px 30px;
   text-align: center;
   z-index: 1;
-  color: white;
+  color: var(--body_color);
   transition: color 0.3s;
 }
 
 .toggleContainer div:first-child span {
-  color: white;
+  color: var(--body_color);
 }
 
 .toggleContainer div:last-child span {
-  color: white;
+  color: var(--body_color);
 }

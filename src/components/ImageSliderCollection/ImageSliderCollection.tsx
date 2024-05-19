@@ -10,7 +10,6 @@ const images = [image1, image2, image3, image4];
 const ImageSliderCollection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animationStarted, setAnimationStarted] = useState(false);
-  const [carouselIndex, setCarouselIndex] = useState<number[]>([0]);
   
 
   useEffect(() => {
