@@ -1,5 +1,5 @@
 .carousel_container {
-  flex: 2;
+  width: 60%;
 }
 .header {
   display: flex;
@@ -24,10 +24,22 @@
   height: 70vh;
   left: 20px;
   top: 30px;
+  z-index: 0;
 }
 .carousel_section_bg h1{
     opacity: 20%;
     font-size: 5rem;
 }
+.main_carousel_container{
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.toggleContainer{
+  margin: 0 40px;
+}
 @media (max-width: 1024px) {
+  .carousel_container{
+    width: 100%;
+  }
 }

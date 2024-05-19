@@ -1,0 +1,44 @@
+.toggleContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  border: 3px solid #282b30;
+  border-radius: 20px;
+  background: #282b30;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggleButton {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  border-radius: 20px;
+  background: #484e56;
+  transition: all 0.3s;
+}
+
+.checked {
+  left: 50%;
+}
+
+.toggleText {
+  padding: 10px 30px;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  transition: color 0.3s;
+}
+
+.toggleContainer div:first-child span {
+  color: white;
+}
+
+.toggleContainer div:last-child span {
+  color: white;
+}

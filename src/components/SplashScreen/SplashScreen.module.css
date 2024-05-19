@@ -2,6 +2,21 @@
   height: 100vh;
   width: 100%;
   background-color: #fff4df;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  animation: slideUp 1s forwards;
+  animation-delay: 5s; 
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 .header {
   padding: 20px;
@@ -236,69 +251,175 @@
 }
 
 @media (max-width: 768px) {
-    .content {
-      font-size: 1rem;
-      height: 30px;
-    }
-  
-  
-    .frameImg2 {
-      width: 370px;
-      animation: frame2Img 4s infinite;
-    }
-  
-    @keyframes frame2Img {
-      50% {
-        width: 250px;
-      }
-    }
-  
-    .frameImg3 {
-      width: 180px;
-      animation: frame3Img 4s infinite;
-    }
-    .frameImg3 img {
-      width: 320px;
-      position: relative;
-    }
-  
-    @keyframes frame3Img {
-      50% {
-        width: 200px;
-      }
-    }
-  
-    .frameImg6 {
-      width: 80px;
-      animation: frame6Img 4s infinite;
-    }
-    .frameImg6 img {
-      width: 450px;
-      position: relative;
-      left: -160px;
-    }
-  
-    @keyframes frame6Img {
-      50% {
-        width: 160px;
-      }
-    }
-  
-    .frameImg7 {
-      width: 140px;
-      animation: frame7Img 4s infinite;
-      background-color: aqua;
-    }
-    .frameImg7 img {
-      width: 320px;
-      position: relative;
-      left: -60px;
-      top: 50px;
-    }
-  
-    @keyframes frame7Img {
-      50% {
-        width: 160px;
-      }
+  .content {
+    font-size: 1rem;
+    height: 30px;
+  }
+
+  .frameImg2 {
+    width: 370px;
+    animation: frame2Img 4s infinite;
+  }
+
+  @keyframes frame2Img {
+    50% {
+      width: 250px;
     }
   }
+
+  .frameImg3 {
+    width: 180px;
+    animation: frame3Img 4s infinite;
+  }
+  .frameImg3 img {
+    width: 320px;
+    position: relative;
+  }
+
+  @keyframes frame3Img {
+    50% {
+      width: 200px;
+    }
+  }
+
+  .frameImg6 {
+    width: 80px;
+    animation: frame6Img 4s infinite;
+  }
+  .frameImg6 img {
+    width: 450px;
+    position: relative;
+    left: -160px;
+  }
+
+  @keyframes frame6Img {
+    50% {
+      width: 160px;
+    }
+  }
+
+  .frameImg7 {
+    width: 140px;
+    animation: frame7Img 4s infinite;
+    background-color: aqua;
+  }
+  .frameImg7 img {
+    width: 320px;
+    position: relative;
+    left: -60px;
+    top: 50px;
+  }
+
+  @keyframes frame7Img {
+    50% {
+      width: 160px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    font-size: 1rem;
+    height: 30px;
+  }
+  .centered_section{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .frameImg1 {
+    width: 100px;
+    animation: frame1Img 4s infinite;
+    overflow: hidden;
+  }
+  .frameImg1 img {
+    width: 230px;
+  }
+
+  @keyframes frame1Img {
+    50% {
+      width: 120px;
+    }
+  }
+
+  .frameImg2 {
+    width: 150px;
+    animation: frame2Img 4s infinite;
+  }
+
+  @keyframes frame2Img {
+    50% {
+      width: 160px;
+    }
+  }
+
+  .frameImg3 {
+    width: 50px;
+    animation: frame3Img 4s infinite;
+  }
+  .frameImg3 img {
+    width: 320px;
+    position: relative;
+  }
+  
+
+  @keyframes frame3Img {
+    50% {
+      width: 100px;
+    }
+  }
+  .frameImg4{
+    width: 70px;
+  }
+
+  .frameImg5 {
+     width: 50px;
+    animation: frame5Img 4s infinite;
+    overflow: hidden;
+  }
+  .frameImg5 img {
+    width: 250px;
+  }
+  
+  @keyframes frame5Img {
+    50% {
+      width: 100px;
+    }
+  }
+
+  .frameImg6 {
+    width: 70px;
+    animation: frame6Img 4s infinite;
+  }
+  .frameImg6 img {
+    width: 450px;
+    position: relative;
+    left: -160px;
+  }
+
+  @keyframes frame6Img {
+    50% {
+      width: 50px;
+    }
+  }
+
+  .frameImg7 {
+    width: 40px;
+    animation: frame7Img 4s infinite;
+    background-color: aqua;
+  }
+  .frameImg7 img {
+    width: 320px;
+    position: relative;
+    left: -60px;
+    top: 50px;
+  }
+
+  @keyframes frame7Img {
+    50% {
+      width: 100px;
+    }
+  }
+  .frameImg8{
+    width: 50px;
+  }
+}

@@ -3,15 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import SplashScreen from './components/SplashScreen/SplashScreen'
-import EventLanding from './components/EventLanding/EventLanding'
+import Landing from './components/Landing/Landing'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* <SplashScreen/> */}
-      <EventLanding/>
+      <SplashScreen/>
+      <Landing/>
     </>
   )
 }
