@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import styles from './ImageSliderCollection.module.css';
-import image1 from '../../assets/images/event/event-carousel-1.png';
+import image1 from '../../assets/images/collections/event-carousel-5.png';
 import image2 from '../../assets/images/event/event-carousel-2.png';
-import image3 from '../../assets/images/event/event-carousel-3.png';
+import image3 from '../../assets/images/collections/event-carousel-6.png';
 import image4 from '../../assets/images/event/event-carousel-4.png';
 
 const images = [image1, image2, image3, image4];
@@ -10,6 +10,7 @@ const images = [image1, image2, image3, image4];
 const ImageSliderCollection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animationStarted, setAnimationStarted] = useState(false);
+  const [carouselIndex, setCarouselIndex] = useState<number[]>([0]);
   
 
   useEffect(() => {
@@ -67,7 +68,7 @@ const ImageSliderCollection = () => {
               transform: `translateX(${translateSize.initial - translateSize.reduceto * activeIndex}px)`,
             }}
           >
-            <div className={`${index === activeIndex ? styles.cardInfoContainerActive : styles.cardInfoContainerInactive}`}>
+            <div className={`${index === activeIndex ? styles.cardInfoContainerActive : styles.cardInfoContainerActive}`}>
               <h1>Lunar Palace: </h1>
               <p>(ft. Kanye west)</p>
             </div>

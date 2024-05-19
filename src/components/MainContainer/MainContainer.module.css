@@ -35,7 +35,7 @@
   align-items: center;
 }
 .toggleContainer{
-  margin: 0 40px;
+  margin: 20px 40px;
 }
 @media (max-width: 1024px) {
   .carousel_container{
