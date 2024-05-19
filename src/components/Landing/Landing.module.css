@@ -6,7 +6,7 @@
   display: flex;
   position: relative;
   animation: slideUp 1s forwards;
-  animation-delay: 8s;
+  animation-delay: 5s;
 }
 
 @keyframes slideUp {
