@@ -25,7 +25,7 @@ const CollectionsInfo = () => {
             Meta <br /> Lives
           </h1>
           <h3>Live in Astrix</h3>
-          <p>Lorem ipsum dolor sit amet consectetur. Ac lorem massa in morbi et sed ipsum. Pellentesque mattis condimentum ut nulla. .</p>
+          <p>Get ready to explore the first-ever 'Explore Your First' collectible! This unique meta item brings your virtual life to Astrix, offering an immersive and engaging experience. Dive into the world of Astrix and enrich your collection today!.</p>
         </div>
         <div className={styles.interested_container}>
           <div className={styles.interested_container_img}>

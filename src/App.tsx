@@ -1,13 +1,14 @@
 import SplashScreen from './components/SplashScreen/SplashScreen'
 import Landing from './components/Landing/Landing'
+import { DarkModeProvider } from './context/DarkModeContext'
 
 function App() {
 
   return (
-    <>
-      <SplashScreen/>
-      <Landing/>
-    </>
+    <DarkModeProvider>
+      <SplashScreen />
+      <Landing />
+    </DarkModeProvider>
   )
 }
 

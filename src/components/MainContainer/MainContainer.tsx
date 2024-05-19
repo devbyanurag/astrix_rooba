@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './MainContainer.module.css'
 import headerLogoImg from '../../assets/images/logo/Astrix Branding.png'
 import ToggleSwitch from '../ToggleSwitch/ToggleSwitch'
@@ -6,6 +6,7 @@ import ImageSliderEvent from '../ImageSliderEvent/ImageSliderEvent'
 import ImageSliderCollection from '../ImageSliderCollection/ImageSliderCollection'
 import sunImg from '../../assets/images/utils/sun.png'
 import moonImg from '../../assets/images/utils/moon.png'
+import { useDarkMode } from '../../context/DarkModeContext'
 
 
 
@@ -16,7 +17,7 @@ interface MainContainerProps {
 
 const MainContainer = ({ isCheckedCollection, setIsCheckedCollection }: MainContainerProps) => {
 
-    const [darkModeValue, setDarkModeValue] = useState(true)
+    const { darkMode, setDark,setLight } = useDarkMode();
 
     const setDarkMode=()=>{
         document.querySelector('body')?.setAttribute('data-theme','dark')
@@ -34,13 +35,13 @@ const MainContainer = ({ isCheckedCollection, setIsCheckedCollection }: MainCont
                 <h1>Astrix.</h1>
                </div>
                <div className={styles.darkMode}>
-                {darkModeValue && <img src={sunImg} alt='sun'  onClick={()=>{
+                {darkMode && <img src={sunImg} alt='sun'  onClick={()=>{
                     setLightMode()
-                    setDarkModeValue(false)
+                    setLight()
                 }}/>}
-                {!darkModeValue && <img src={moonImg} alt='moon' onClick={()=>{
+                {!darkMode && <img src={moonImg} alt='moon' onClick={()=>{
                     setDarkMode()
-                    setDarkModeValue(true)
+                    setDark()
 
                 }}/>}
 

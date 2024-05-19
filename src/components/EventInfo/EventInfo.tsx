@@ -4,6 +4,8 @@ import artistlineup1Img from '../../assets/images/event/event-artistLineup-1.png
 import artistlineup2Img from '../../assets/images/event/event-artistLineup-2.png'
 import artistlineup3Img from '../../assets/images/event/event-artistLineup-3.png'
 import qrImg from '../../assets/images/event/event-qr-2.png'
+import loclightImg from '../../assets/images/utils/loc-light.png'
+import alarmlightImg from '../../assets/images/utils/alarm-light.png'
 
 
 
@@ -12,25 +14,28 @@ import qrImg from '../../assets/images/event/event-qr-2.png'
 
 import styles from './EventInfo.module.css'
 import Button from '../Button/Button'
+import { useDarkMode } from '../../context/DarkModeContext'
 const EventInfo = () => {
+  const { darkMode } = useDarkMode();
+
   return (
     <div className={styles.info_container}>
       <div className={styles.info_inner_container}>
         <div>
           <h2 className={styles.info_heading}>
-            Explore Youre First <br /> Event
+            Explore Your First <br /> Event
           </h2>
           <div className={styles.info}>
             <h1>
               Event Name
             </h1>
             <div className={styles.eventTimeVenue}>
-              <img src={locdarkImg} alt="loc" />
+              {darkMode ? <img src={locdarkImg} alt="loc" /> : <img src={loclightImg} alt="loc" />}
               <h4>Venue</h4>
-              <img src={alarmdarkImg} alt="alarm" />
+              {darkMode ? <img src={alarmdarkImg} alt="alarm" /> : <img src={alarmlightImg} alt="alarm" />}
               <h4> 04/3/2024 @19:00</h4>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rem quo laboriosam, quaerat recusandae tempora modi iure voluptas mollitia? Impedit saepe eligendi libero alias ea omnis quo, repudiandae maiores repellat.</p>
+            <p>Experience the innovative 'Explore Your First' event. Dive into new ideas and discoveries at an undisclosed venue. Stay tuned for updates!.</p>
             <div className={styles.artistLineup}>
               <div><h2>Artist Lineup</h2></div>
               <div className={styles.artistLineupImgs}>
@@ -45,7 +50,7 @@ const EventInfo = () => {
         <div className={styles.qrContainer}>
           <img src={qrImg} alt="qr" />
 
-          <Button/>
+          <Button />
 
         </div>
       </div>

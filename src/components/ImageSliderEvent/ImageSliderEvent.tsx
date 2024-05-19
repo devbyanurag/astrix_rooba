@@ -4,6 +4,8 @@ import image1 from '../../assets/images/event/event-carousel-1.png';
 import image2 from '../../assets/images/event/event-carousel-2.png';
 import image3 from '../../assets/images/event/event-carousel-3.png';
 import image4 from '../../assets/images/event/event-carousel-4.png';
+import loclightImg from '../../assets/images/utils/loc-dark.png'
+
 
 const images = [image1, image2, image3, image4];
 
@@ -61,7 +63,7 @@ const ImageSliderEvent = () => {
             <img src={image} alt={`img${index + 1}`} />
             <div className={`${index === activeIndex ? styles.cardInfoContainerActive : styles.cardInfoContainerInactive}`}>
               <h1>Event Name</h1>
-              <p>Location</p>
+              <span className={styles.locSpan}> <img src={loclightImg} alt="loc" />Location</span>
             </div>
           </div>
         ))}
